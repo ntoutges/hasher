@@ -1,0 +1,23 @@
+{
+    "MD5": {
+        "name": "MD5"
+    },
+    "SHA1": {
+        "name": "SHA-1"
+    },
+    "SHA3": {
+        "name": "SHA-3"
+    },
+    "SHA224": {
+        "name": "SHA-224"
+    },
+    "SHA256": {
+        "name": "SHA-256"
+    },
+    "SHA384": {
+        "name": "SHA-384"
+    },
+    "SHA512": {
+        "name": "SHA-512"
+    }
+}

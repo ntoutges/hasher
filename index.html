@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TEST</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+        <script src="script.js" type="module" defer></script>
+    </head>
+    <body>
+    
+        <div id="input">
+            <select id="hash-type">
+                <option value="plaintext">Loading...</option>
+            </select>
+            <input id="plaintext" placeholder="Text to hash...">
+        </div>
+        <button id="hash" disabled>Hash!</button>
+
+        <div id="data"></div>
+
+        <template>
+            <div class="data-row">
+
+                <div class="hash-type">MD5</div>
+                <div class="hash-plaintext">Secret</div>
+                <div class="hash-digest">Loading...</div>
+                <div class="hash-created">10/17/2024 2:26PM</div>
+
+            </div>
+
+            <div class="data-separator"></div>
+
+            <option class="data-option"></option>
+
+        </template>
+    </body>
+</html>
