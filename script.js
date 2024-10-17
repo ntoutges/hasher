@@ -24,7 +24,6 @@ db.collection("hashes").onSnapshot(snapshot => {
     })
 });
 
-console.log(CryptoJS)
 function createHash(plaintext, type) {
     type = type.toUpperCase(); // Normalize
 
