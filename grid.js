@@ -20,7 +20,7 @@ export class Grid {
         row.querySelector(".hash-created").textContent = data.created ? Grid.genDateString(data.created) : "-";
     
         const separator = this.templates.querySelector(".data-separator").cloneNode(true);
-        prepend ? this.el.prepend(separator) : this.el.append(separator);
+        prepend ? row.after(separator) : row.after(separator);
     }
 
     handleClick(e) {
